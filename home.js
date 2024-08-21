@@ -12,3 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('open');
     });
 });
+
+document.querySelectorAll('#social-ul a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.open(link.href, '_blank');
+            });
+        });
